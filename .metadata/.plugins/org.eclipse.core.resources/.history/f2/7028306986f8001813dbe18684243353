@@ -1,0 +1,61 @@
+package eb2;
+
+import java.util.Scanner;
+
+public class BETEMATRIZEA01 {
+
+	public static void main(String[] args) {
+		
+		Scanner teklatua= new Scanner (System.in);
+		int znbk;
+		int kont=0;
+		int kont1=0;
+		int kont2=0;
+		int kont3=0;
+		int kont4=0;
+		int[][]matriz;
+		matriz=new int [3][4];
+		//deklarazioak egin ondoren, kodea egiten hasten gara
+		
+		do {
+		System.out.println("Sartu zenbaki bat");
+		znbk=teklatua.nextInt();
+		while(kont<=2) {
+			matriz [0] [kont]= znbk;
+			kont++;
+		}
+		while(kont1<=2) {
+			matriz [1] [kont1]= znbk;
+			kont1++;
+		}
+		while(kont2<=2) {
+			matriz [2] [kont2]= znbk;
+			kont2++;
+		}
+		do {
+			while(kont<=2) {
+				System.out.println(matriz [0] [kont]);
+				kont++;
+			}
+			while(kont1<=2) {
+				System.out.println(matriz [1] [kont1]);
+				kont1++;
+			}
+			while(kont2<=2) {
+				System.out.println(matriz [2] [kont2]);
+				kont2++;
+			}
+			kont4++;
+			
+		}while(kont4!=12);
+		kont3++;
+		}while(kont3!=12);
+		
+		
+		
+		
+		
+
+	}
+
+}

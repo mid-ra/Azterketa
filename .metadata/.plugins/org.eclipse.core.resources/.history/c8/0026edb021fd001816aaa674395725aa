@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class ARRAYORD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teklatua = new Scanner(System.in);
+		int array[]=new int [100];
+		int znbk;
+		int kont=0;
+		int i=0;
+		int j;
+		boolean aurkitu=false;
+		boolean lehenengoa=true;
+		
+			System.out.println("sartu zenbaki bat");
+			znbk=teklatua.nextInt();
+			while(znbk>=0) {
+				if(!lehenengoa) {
+					for(i=0 ;i < kont && !aurkitu ;i++) {
+						if(array[i]>znbk) {
+							aurkitu=true;
+						}
+					}
+					aurkitu=false;
+					for(j=kont ; j>i ; j--) {
+						array[j]=array[j-1];
+					}
+					array[i]=znbk;
+					kont++;
+					System.out.println("sartu zenbaki bat");
+					znbk=teklatua.nextInt();
+				}
+				else {
+					array[0]=znbk;
+					lehenengoa=false;
+				}
+				
+			}
+		for(int k=0;k<kont;k++) {
+			System.out.println(array[k]);
+		}
+	}
+}
+

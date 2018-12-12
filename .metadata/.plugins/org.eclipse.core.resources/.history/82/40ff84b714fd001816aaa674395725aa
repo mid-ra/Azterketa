@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ARRAYORD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teklatua = new Scanner(System.in);
+		int f=0;
+		int z=1;
+		int array[][]=new int [f][z];
+		int num;
+		do {
+			System.out.println("Sartu zenbaki bat");
+			num=teklatua.nextInt();
+			array[f][z]=num;
+			
+		}while (num>=0);
+
+	}
+
+}
